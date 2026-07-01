@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research — Huayuchen Hua">
+  <title>Research | Huayuchen Hua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Huayuchen Hua <span class="cn-name">华羽宸</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <div class="container">
+        <h1>Research</h1>
+        <p lang="zh">研究方向 · 理念 · 进行中的工作</p>
+      </div>
+    </div>
+
+    <!-- Research Interests (Full) -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="section-title-zh lang="zh">研究方向</p>
+
+        <div class="interests-grid">
+          <div class="interest-card">
+            <h3>AI for Science</h3>
+            <p>Leveraging machine learning to accelerate scientific discovery in chemistry and biology. I'm interested in building models that not only predict but also reveal underlying scientific principles.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Molecular Representation Learning</h3>
+            <p>Learning effective and transferable molecular representations from graph, sequence, and 3D structural data. Exploring how different molecular views complement each other.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Mass Spectrometry</h3>
+            <p>Computational methods for tandem mass spectrometry data, including spectrum prediction, metabolite identification, and de novo structure elucidation from MS/MS data.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Knowledge-guided Machine Learning</h3>
+            <p>Incorporating chemical fragmentation rules, biological priors, and physical constraints into deep learning to make models more data-efficient, interpretable, and scientifically grounded.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Scientific Foundation Models</h3>
+            <p>Developing and adapting large-scale pre-trained models for scientific data — from molecular graphs and sequences to mass spectra — enabling cross-modal understanding and knowledge transfer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Philosophy -->
+    <section class="section section-alt" id="philosophy">
+      <div class="container">
+        <h2 class="section-title">Research Philosophy</h2>
+        <p class="section-title-zh lang="zh">研究理念</p>
+
+        <div class="philosophy-block">
+          <p>
+            I am interested in building machine learning systems that can reason with scientific knowledge
+            instead of relying solely on statistical correlations. My long-term goal is to develop
+            foundation models for scientific data that integrate domain knowledge from chemistry and
+            biology, enabling more reliable molecular understanding and discovery.
+          </p>
+        </div>
+
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:16px;">
+          I believe the most impactful AI for Science research sits at the intersection of
+          <strong>domain expertise</strong> and <strong>machine learning innovation</strong> —
+          understanding the science deeply enough to know what questions to ask, and building the
+          right models to answer them.
+        </p>
+      </div>
+    </section>
+
+    <!-- Ongoing Work -->
+    <section class="section" id="ongoing">
+      <div class="container">
+        <h2 class="section-title">Ongoing Work</h2>
+        <p class="section-title-zh lang="zh">进行中的研究</p>
+
+        <p style="margin-bottom:20px; font-size:0.9rem; color:var(--text-muted);">
+          These are directions I am actively exploring. Some may lead to publications, others are
+          early-stage explorations — all reflect where my thinking is heading.
+        </p>
+
+        <div class="ongoing-grid">
+          <div class="ongoing-item">
+            <h3>Knowledge-guided Molecular Retrieval</h3>
+            <p>Exploring how chemical fragmentation mechanisms and biological knowledge can be incorporated into retrieval models for metabolite identification from tandem mass spectra.</p>
+          </div>
+          <div class="ongoing-item">
+            <h3>Chemical Fragmentation Modeling</h3>
+            <p>Building models that understand how molecules fragment in mass spectrometers, integrating physical rules with learned representations for better spectrum prediction.</p>
+          </div>
+          <div class="ongoing-item">
+            <h3>Scientific Reasoning for Mass Spectrometry</h3>
+            <p>Developing methods that combine learned representations with explicit reasoning over chemical structures and fragmentation pathways for more interpretable metabolite identification.</p>
+          </div>
+          <div class="ongoing-item">
+            <h3>Foundation Models for Molecular Science</h3>
+            <p>Exploring cross-modal foundation models that jointly understand molecular graphs, sequences, spectra, and textual descriptions for comprehensive molecular understanding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2026 Huayuchen Hua.
+        <a href="https://github.com/CHERRY-ui8/academic">Source code</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

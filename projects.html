@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research Projects — Huayuchen Hua">
+  <title>Projects | Huayuchen Hua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Huayuchen Hua <span class="cn-name">华羽宸</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="page-header">
+      <div class="container">
+        <h1>Research Projects</h1>
+        <p lang="zh">研究项目</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- VecMol -->
+        <div class="project-card">
+          <div class="project-header">
+            <h2 class="project-title">VecMol</h2>
+            <span class="project-status published">Published</span>
+          </div>
+          <p class="project-subtitle">3D Molecular Generation — Vector-Field Representations</p>
+          <div class="project-tags">
+            <span class="project-tag">Diffusion Model</span>
+            <span class="project-tag">EGNN</span>
+            <span class="project-tag">Vector Field</span>
+            <span class="project-tag">Molecular Geometry</span>
+          </div>
+          <p class="project-summary">
+            Proposed a novel vector-field representation for molecular generation by modeling continuous
+            molecular fields instead of directly generating atomic coordinates. This approach enables
+            more efficient and physically plausible 3D molecule generation. Accepted at ICML 2026.
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link">Paper</a>
+            <a href="#" class="pub-link">Code</a>
+          </div>
+        </div>
+
+        <!-- Mass Spectrum ↔ Molecule Retrieval -->
+        <div class="project-card">
+          <div class="project-header">
+            <h2 class="project-title">Mass Spectrum &harr; Molecule Retrieval</h2>
+            <span class="project-status other">In Progress</span>
+          </div>
+          <p class="project-subtitle">Cross-modal Retrieval for Metabolite Identification</p>
+          <div class="project-tags">
+            <span class="project-tag">DreaMS</span>
+            <span class="project-tag">MoLFormer</span>
+            <span class="project-tag">Contrastive Learning</span>
+            <span class="project-tag">Retrieval</span>
+          </div>
+          <p class="project-summary">
+            Developed a CLIP-style cross-modal retrieval framework that aligns tandem mass spectra
+            with molecular representations. This enables direct retrieval of candidate molecules from
+            spectral queries, facilitating metabolite identification without requiring exhaustive
+            database search.
+          </p>
+        </div>
+
+        <!-- Knowledge-guided Molecular Retrieval -->
+        <div class="project-card">
+          <div class="project-header">
+            <h2 class="project-title">Knowledge-guided Molecular Retrieval</h2>
+            <span class="project-status ongoing">Ongoing</span>
+          </div>
+          <p class="project-subtitle">Incorporating Chemical Priors into Retrieval Models</p>
+          <div class="project-tags">
+            <span class="project-tag">Fragmentation</span>
+            <span class="project-tag">Chemistry</span>
+            <span class="project-tag">Biological Prior</span>
+            <span class="project-tag">Reaction Knowledge</span>
+          </div>
+          <p class="project-summary">
+            Exploring how chemical fragmentation mechanisms and biological knowledge can be incorporated
+            into retrieval models for metabolite identification. This project aims to move beyond pure
+            embedding-based retrieval by integrating domain-specific reasoning about how molecules
+            fragment and behave in biological systems. This is becoming the central project of my
+            current research.
+          </p>
+        </div>
+
+        <!-- Graph Foundation Models -->
+        <div class="project-card">
+          <div class="project-header">
+            <h2 class="project-title">Graph Foundation Models</h2>
+            <span class="project-status other">Shanghai AI Lab</span>
+          </div>
+          <p class="project-subtitle">LLM-driven Graph Data Generation</p>
+          <div class="project-tags">
+            <span class="project-tag">GraphGen</span>
+            <span class="project-tag">LLM</span>
+            <span class="project-tag">Synthetic Data</span>
+            <span class="project-tag">Foundation Model</span>
+          </div>
+          <p class="project-summary">
+            Contributed to <strong>GraphGen</strong>, a framework that enhances supervised fine-tuning
+            for large language models with knowledge-driven synthetic graph data generation. This work
+            explores how structured graph data can be generated and leveraged to improve LLM performance.
+            Submitted to KDD and EMNLP.
+          </p>
+          <div class="pub-links">
+            <a href="https://github.com/CHERRY-ui8/GraphGen" class="pub-link">GitHub &nearr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2026 Huayuchen Hua.
+        <a href="https://github.com/CHERRY-ui8/academic">Source code</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

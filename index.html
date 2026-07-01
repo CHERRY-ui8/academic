@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic homepage of Huayuchen Hua — AI for Science, Molecular Machine Learning, Mass Spectrometry">
+  <meta name="author" content="Huayuchen Hua">
+  <title>Huayuchen Hua | AI for Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        Huayuchen Hua <span class="cn-name">华羽宸</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-name">
+          Huayuchen Hua <span class="cn">华羽宸</span>
+        </h1>
+        <p class="hero-title">Undergraduate Student @ Peking University</p>
+        <p class="hero-affiliation">Yuanpei College · M&#x03BC; Lab</p>
+
+        <div class="hero-tags">
+          <span class="tag">AI for Science</span>
+          <span class="tag">Molecular Machine Learning</span>
+          <span class="tag">Computational Metabolomics</span>
+          <span class="tag">Mass Spectrometry</span>
+          <span class="tag">Scientific Foundation Models</span>
+        </div>
+
+        <div class="hero-links">
+          <a href="research.html" class="btn btn-primary">About My Research</a>
+          <a href="cv.html" class="btn">Full CV</a>
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-title-zh lang="zh">关于我</p>
+
+        <div class="about-content">
+          <p>
+            I am an undergraduate student at Yuanpei College, Peking University, currently working on
+            <strong>AI for Science</strong>. My research focuses on <strong>molecular machine learning</strong>,
+            <strong>computational metabolomics</strong>, and <strong>mass spectrometry</strong>.
+          </p>
+
+          <p>
+            I am particularly interested in integrating chemical knowledge, biological priors, and
+            scientific reasoning into deep learning models, with the goal of building machine learning
+            systems that better understand scientific data rather than relying solely on black-box learning.
+          </p>
+
+          <p>
+            Previously, I worked on <strong>3D molecular generation</strong> and
+            <strong>molecular representation learning</strong>. More recently, my research has shifted
+            toward <strong>knowledge-guided molecular retrieval</strong> and
+            <strong>metabolite identification from tandem mass spectra</strong>.
+          </p>
+
+          <div class="about-zh">
+            <div class="about-zh-label" lang="zh">中文简介</div>
+            <p lang="zh">
+              我是北京大学元培学院本科生，目前从事 AI for Science 方向的研究。我的工作聚焦于
+              分子机器学习、计算代谢组学和质谱分析。我特别关注如何将化学知识、生物先验和
+              科学推理融入深度学习模型，让机器学习系统能够真正理解科学数据，而不仅仅是依赖
+              黑箱学习。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Interests (Quick Preview) -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="section-title-zh lang="zh">研究方向</p>
+
+        <div class="interests-grid">
+          <div class="interest-card">
+            <h3>AI for Science</h3>
+            <p>Building machine learning systems that can reason with scientific knowledge for molecular understanding and discovery.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Molecular Representation Learning</h3>
+            <p>Learning effective molecular representations from data that encode chemical and biological information.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Mass Spectrometry</h3>
+            <p>Computational approaches for tandem mass spectrum analysis and metabolite identification.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Knowledge-guided Machine Learning</h3>
+            <p>Incorporating chemical, biological, and physical priors into deep learning models for scientific data.</p>
+          </div>
+          <div class="interest-card">
+            <h3>Scientific Foundation Models</h3>
+            <p>Developing general-purpose foundation models that integrate multi-modal scientific data.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top: 28px;">
+          <a href="research.html" class="btn">Learn more about my research &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="section" id="news">
+      <div class="container">
+        <h2 class="section-title">News</h2>
+        <p class="section-title-zh lang="zh">最新动态</p>
+
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">Jul 2026</span>
+            <span class="news-text">One paper accepted by <strong>ICML 2026</strong>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Jun 2026</span>
+            <span class="news-text">Started research on knowledge-guided molecular retrieval.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Nov 2025</span>
+            <span class="news-text">Joined Shanghai AI Laboratory as Research Intern.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Oct 2024</span>
+            <span class="news-text">Joined M&#x03BC; Lab, Peking University.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2026 Huayuchen Hua. Built with &hearts;.
+        <br class="mobile-only">
+        <a href="https://github.com/CHERRY-ui8/academic">Source code</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
