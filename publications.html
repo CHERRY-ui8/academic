@@ -52,16 +52,29 @@
               VecMol: Vector-Field Representations for 3D Molecule Generation
             </div>
             <div class="pub-authors">
-              <strong>Huayuchen Hua</strong>, ...
+              <strong>Yuchen Hua</strong>, Xingang Peng, Jianzhu Ma, Muhan Zhang
             </div>
             <div class="pub-venue">
               ICML 2026
             </div>
             <div class="pub-links">
-              <a href="#" class="pub-link">Project</a>
-              <a href="#" class="pub-link">Paper</a>
-              <a href="#" class="pub-link">Code</a>
-              <a href="#" class="pub-link">BibTeX</a>
+              <a href="https://openreview.net/forum?id=4K87H0eSqu" class="pub-link" target="_blank" rel="noopener">Paper &nearr;</a>
+              <a href="https://github.com/MuLabPKU/vecmol" class="pub-link" target="_blank" rel="noopener">Code &nearr;</a>
+              <a href="javascript:void(0)" class="pub-link" id="bibtexToggle" onclick="toggleBibtex()">BibTeX</a>
+            </div>
+            <div id="bibtexDisplay" style="display:none; margin-top:12px;">
+              <pre style="background:var(--bg-alt); padding:16px; border-radius:6px; font-size:0.78rem; font-family:var(--font-mono); white-space:pre-wrap; word-break:break-all; border:1px solid var(--border); overflow-x:auto;">@misc{hua2026vecmolvectorfieldrepresentations3d,
+      title={VecMol: Vector-Field Representations for 3D Molecule Generation},
+      author={Yuchen Hua and Xingang Peng and Jianzhu Ma and Muhan Zhang},
+      year={2026},
+      eprint={2603.12734},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2603.12734},
+      howpublished={ICML 2026},
+}</pre>
+              <a href="assets/vecmol.bib" download style="font-size:0.8rem; color:var(--accent); margin-top:6px; display:inline-block;">Download .bib &darr;</a>
+              <button onclick="copyBibtex()" style="margin-left:12px; font-size:0.8rem; background:none; border:1px solid var(--border); border-radius:4px; padding:3px 10px; cursor:pointer; color:var(--text-muted);">Copy</button>
             </div>
           </li>
         </ul>
@@ -90,6 +103,22 @@
     </div>
   </footer>
 
+  <script>
+    function toggleBibtex() {
+      var el = document.getElementById('bibtexDisplay');
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function copyBibtex() {
+      var text = document.querySelector('#bibtexDisplay pre').textContent;
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = event.target;
+        var orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = orig; }, 2000);
+      });
+    }
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
